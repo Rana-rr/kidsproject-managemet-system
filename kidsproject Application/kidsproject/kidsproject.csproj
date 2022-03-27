@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F2F28A73-DD96-4475-A4DF-C89754A5774D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kidsproject</RootNamespace>
+    <AssemblyName>kidsproject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.2.8, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.8\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\adminanswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminanswer.Designer.cs">
+      <DependentUpon>adminanswer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admincourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\admincourses.Designer.cs">
+      <DependentUpon>admincourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminexam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminexam.Designer.cs">
+      <DependentUpon>adminexam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminhome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminhome.Designer.cs">
+      <DependentUpon>adminhome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminkids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminkids.Designer.cs">
+      <DependentUpon>adminkids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\adminsignout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\adminsignout.Designer.cs">
+      <DependentUpon>adminsignout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\admin_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\admin_result.Designer.cs">
+      <DependentUpon>admin_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Exam.cs" />
+    <Compile Include="ins_answe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ins_answe.Designer.cs">
+      <DependentUpon>ins_answe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ins_exam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ins_exam.Designer.cs">
+      <DependentUpon>ins_exam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ins_result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ins_result.Designer.cs">
+      <DependentUpon>ins_result.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kid\examkids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kid\examkids.Designer.cs">
+      <DependentUpon>examkids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+      <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Kid\homekids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kid\homekids.Designer.cs">
+      <DependentUpon>homekids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Instractors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\Instractors.Designer.cs">
+      <DependentUpon>Instractors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kid\IQquiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kid\IQquiz.Designer.cs">
+      <DependentUpon>IQquiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="logindataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>logindataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Mycourses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mycourses.Designer.cs">
+      <DependentUpon>Mycourses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kid\resultkids.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kid\resultkids.Designer.cs">
+      <DependentUpon>resultkids.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Students.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Students.Designer.cs">
+      <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Admin\adminanswer.resx">
+      <DependentUpon>adminanswer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\admincourses.resx">
+      <DependentUpon>admincourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminexam.resx">
+      <DependentUpon>adminexam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminhome.resx">
+      <DependentUpon>adminhome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminkids.resx">
+      <DependentUpon>adminkids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\adminsignout.resx">
+      <DependentUpon>adminsignout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\admin_result.resx">
+      <DependentUpon>admin_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ins_answe.resx">
+      <DependentUpon>ins_answe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ins_exam.resx">
+      <DependentUpon>ins_exam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ins_result.resx">
+      <DependentUpon>ins_result.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kid\examkids.resx">
+      <DependentUpon>examkids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kid\homekids.resx">
+      <DependentUpon>homekids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\Instractors.resx">
+      <DependentUpon>Instractors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kid\IQquiz.resx">
+      <DependentUpon>IQquiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mycourses.resx">
+      <DependentUpon>Mycourses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kid\resultkids.resx">
+      <DependentUpon>resultkids.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Students.resx">
+      <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="logindataset.xsc">
+      <DependentUpon>logindataset.xsd</DependentUpon>
+    </None>
+    <None Include="logindataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>logindataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="logindataset.xss">
+      <DependentUpon>logindataset.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vedantu-Superkid-768x461.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\57449552_1175305082636006_8228322333069148160_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Instructor\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7fac3ded-4913-4cb3-817a-d668842d47cc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\56c9fb22-2138-4012-8c8f-93c0d3f7021b.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
